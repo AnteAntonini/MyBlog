@@ -1,5 +1,6 @@
 ---
 title: "Two Forms of Pre-rendering"
+subtitle: "This is subtitle"
 date: "August 18, 2023"
 ---
 

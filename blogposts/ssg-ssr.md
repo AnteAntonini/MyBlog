@@ -1,5 +1,6 @@
 ---
 title: "When to Use Static Generation vs. Server-side Rendering"
+subtitle: "This is subtitle"
 date: "August 20, 2023"
 ---
 
