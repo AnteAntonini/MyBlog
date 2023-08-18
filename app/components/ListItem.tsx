@@ -5,7 +5,7 @@ type Props = {
 };
 
 export default function ListItem({ post }: Props) {
-  const { id, title, date } = post;
+  const { id, title, subtitle, date } = post;
 
   return (
     <li className="mt-4 text-2xl dark:text-white/90">
@@ -15,8 +15,14 @@ export default function ListItem({ post }: Props) {
       >
         {title}
       </Link>
+      <p className="text-sm my-1">{subtitle}</p>
       <br />
-      <p className="text-sm mt-1">{date}</p>
+      <div className="flex items-center justify-between">
+        <Link className="dark:text-blue-400" href={`/posts/${id}`}>
+          Read more
+        </Link>
+        <p className="text-sm ">{date}</p>
+      </div>
     </li>
   );
 }
