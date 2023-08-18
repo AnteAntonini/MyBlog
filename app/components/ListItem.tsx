@@ -25,7 +25,7 @@ export default function ListItem({ post }: Props) {
             href={`/posts/${id}`}
           >
             Read more
-            <AiOutlineArrowRight className="ml-2 w-4 hover:scale-x-300" />
+            <AiOutlineArrowRight className="ml-2 w-4" />
           </Link>
 
           <p className="text-base text-slate-300">{date}</p>
