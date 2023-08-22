@@ -21,11 +21,11 @@ export default function ListItem({ post }: Props) {
       {date && (
         <div className="flex items-center justify-between pb-4">
           <Link
-            className="flex items-center dark:text-blue-400 hover:text-blue-500 hover:text-blue-500 transition duration-200 text-base"
+            className="group flex items-center dark:text-blue-400 group-hover:text-blue-500 transition duration-200 text-base font-medium	"
             href={`/posts/${id}`}
           >
             Read more
-            <AiOutlineArrowRight className="ml-2 w-4" />
+            <AiOutlineArrowRight className="ml-2 w-4 group-hover:scale-x-125" />
           </Link>
 
           <p className="text-base text-slate-300">{date}</p>
