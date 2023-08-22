@@ -41,18 +41,18 @@ export default async function Post({ params }: PostParams) {
   const { title, date, contentHtml } = await getPostData(postId);
 
   return (
-    <main className="px-6 prose prose-md  prose-slate dark:prose-invert mx-auto">
+    <main className="px-6 pb-32 prose prose-lg  prose-slate dark:prose-invert mx-auto">
       <h1 className="text-3xl mt-4 mb-0">{title}</h1>
       <p className="mt-0">{date}</p>
       <article>
         <section dangerouslySetInnerHTML={{ __html: contentHtml }} />
-        <p className="font-medium	">
+        <p className="font-medium">
           <Link
             href="/"
             className="group no-underline flex justify-start items-center dark:text-blue-400 hover:text-blue-500 transition duration-200"
           >
-            <AiOutlineArrowLeft className="mr-2 group-hover:scale-x-125" /> Back
-            to home
+            <AiOutlineArrowLeft className="mr-2 group-hover:scale-x-125" />
+            Back to home
           </Link>
         </p>
       </article>
