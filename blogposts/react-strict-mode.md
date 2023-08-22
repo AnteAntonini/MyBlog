@@ -24,7 +24,7 @@ To clarify, Strict Mode is not causing the double invocation in the traditional 
 
 ## How to disable React Strict Mode
 
-In Vite, got to `src/main.jsx` and remove the <React.StrictMode> wrapper component from:
+In Vite, go to `src/main.jsx` and remove the <React.StrictMode> wrapper component from:
 
 ```js
 import ReactDOM from "react-dom/client";
