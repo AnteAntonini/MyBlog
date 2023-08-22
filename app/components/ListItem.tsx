@@ -16,7 +16,7 @@ export default function ListItem({ post }: Props) {
       >
         {title}
       </Link>
-      <p className="text-sm text-slate-300 my-1">{subtitle}</p>
+      <p className="text-base text-slate-300 my-2">{subtitle}</p>
       <br />
       {date && (
         <div className="flex items-center justify-between pb-4">
