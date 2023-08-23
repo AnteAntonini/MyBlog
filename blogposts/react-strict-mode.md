@@ -1,6 +1,6 @@
 ---
 title: "Why does useEffect run two times?"
-subtitle: "How to fix the useEffect runs twice problem"
+subtitle: "What is Strict Mode and how to remove it"
 date: "August 22, 2023"
 ---
 
