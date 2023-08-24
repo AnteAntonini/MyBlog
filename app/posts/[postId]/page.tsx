@@ -45,7 +45,10 @@ export default async function Post({ params }: PostParams) {
       <h1 className="text-3xl mt-4 mb-0">{title}</h1>
       <p className="mt-0">{date}</p>
       <article>
-        <section dangerouslySetInnerHTML={{ __html: contentHtml }} />
+        <section
+          className="pb-10"
+          dangerouslySetInnerHTML={{ __html: contentHtml }}
+        />
         <p className="font-medium">
           <Link
             href="/"
