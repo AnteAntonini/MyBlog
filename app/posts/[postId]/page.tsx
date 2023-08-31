@@ -31,7 +31,7 @@ export function generateMetadata({ params }: PostParams) {
 type PostParams = { params: { postId: string } };
 
 export default async function Post({ params }: PostParams) {
-  const posts = getSortedPostsData(); //deduped! No need to send request twice, already requested
+  const posts = getSortedPostsData();
   const { postId } = params;
 
   if (!posts.find((post) => post.id === postId)) {
@@ -42,7 +42,7 @@ export default async function Post({ params }: PostParams) {
 
   return (
     <main className="px-6 pb-32 prose prose-lg  prose-slate dark:prose-invert mx-auto">
-      <h1 className="text-3xl mt-4 mb-0">{title}</h1>
+      <h1 className="text-4xl mt-4 mb-0">{title}</h1>
       <p className="mt-0">{date}</p>
       <article>
         <section
