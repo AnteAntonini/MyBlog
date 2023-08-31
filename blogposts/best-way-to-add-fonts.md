@@ -72,7 +72,7 @@ To optimize font loading and enhance performance, you can consider the following
 
 **Preloading**: Use the <link> element with the preload attribute to hint the browser to fetch the font files early in the loading process, reducing perceived load times.
 
->⚠ Note: Although preload is highly effective at making fonts discoverable early in the page load process, this comes at the cost of taking away browser resources from the loading of other resources.
+>⚠ Note: Although preload is quite effective at making fonts discoverable early in the page load process, it depletes browser resources that could otherwise be used to load other resources.
 
 
 **Font Display**: The font-display property allows you to control how the text is displayed while the custom font is loading. Options like swap, fallback, and optional can help you prioritize speed or aesthetics based on your website's needs.
