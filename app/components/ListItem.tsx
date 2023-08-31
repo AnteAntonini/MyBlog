@@ -9,7 +9,7 @@ export default function ListItem({ post }: Props) {
   const { id, title, subtitle, date } = post;
 
   return (
-    <li className="mt-5 text-2xl dark:text-white/90 border-b last:border-b-0 first:border-b-0">
+    <li className="mt-5 py-4 text-2xl dark:text-white/90  border-b last:border-b-0 border-current border-slate-500">
       <Link
         className="hover:text-blue-400 dark:hover:text-blue-500 transition duration-200 font-bold"
         href={`/posts/${id}`}
