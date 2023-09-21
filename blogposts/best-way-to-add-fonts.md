@@ -18,11 +18,11 @@ When it comes to web fonts, there are several font formats to consider. The most
 
 ## Balancing Font Importing and Performance
 
-Introducing custom web fonts can impact your website's performance, as larger font files may increase loading times. However, the @font-face rule, a CSS at-rule, enables you to import fonts while optimizing performance. By following best practices like font subsetting and utilizing efficient font formats, you can maintain a balance between aesthetics and speed.
+Introducing custom web fonts can impact your website's performance, as larger font files may increase loading times. However, the **@font-face** rule, a CSS at-rule, enables you to import fonts while optimizing performance. By following best practices like font subsetting and utilizing efficient font formats, you can maintain a balance between aesthetics and speed.
 
 ## Adding Web Fonts in Three Simple Steps
 
-Now, let's walk through the process of adding a web font to your project using the @font-face rule.
+Now, let's walk through the process of adding a web font to your project using the **@font-face** rule.
 
 **Step 1: Download the Font** \
 Visit a reputable font repository like Google Fonts, Adobe Fonts, or Font Squirrel. Browse through the available fonts and choose the one that aligns with your website's style. Once you've made your selection, download the font files. Typically, these downloads will include various formats such as WOFF, WOFF2, TTF, or OTF.
