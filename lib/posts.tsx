@@ -30,8 +30,14 @@ export function getSortedPostsData() {
     // Combine the data with the id
     return blogPost;
   });
+
   // Sort posts by date
-  return allPostsData.sort((a, b) => (a.date < b.date ? 1 : -1));
+  const sortedPosts = allPostsData.sort((a, b) => {
+    const dateA = new Date(a.date);
+    const dateB = new Date(b.date);
+    return dateB.getTime() - dateA.getTime(); // This sorts in descending order.
+  });
+  return sortedPosts;
 }
 
 export async function getPostData(id: string) {
